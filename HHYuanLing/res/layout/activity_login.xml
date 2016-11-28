@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- 用户名和密码编辑框 -->
+
+    <com.benefit.buy.library.views.slidingdrawer.SlidingDrawer
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:content="@+id/drawer_content"
+        app:handle="@+id/drawer_handle" >
+
+        <RelativeLayout
+            android:id="@+id/drawer_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_login"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingBottom="3dip"
+                android:paddingTop="@dimen/padding_big"
+                android:text="@string/cooperation_login"
+                android:textColor="@color/text_color_a"
+                android:textSize="@dimen/gj_c" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/drawer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingTop="@dimen/padding_normal" >
+
+            <ImageView
+                android:id="@+id/oauth_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/login"
+                android:src="@drawable/account_ic_oauth_sina" />
+
+            <ImageView
+                android:id="@+id/oauth_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:contentDescription="@string/login"
+                android:src="@drawable/account_ic_oauth_qq" />
+
+            <ImageView
+                android:id="@+id/oauth_baidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/login"
+                android:src="@drawable/account_ic_oauth_baidu" />
+        </LinearLayout>
+    </com.benefit.buy.library.views.slidingdrawer.SlidingDrawer>
+
+</RelativeLayout>
