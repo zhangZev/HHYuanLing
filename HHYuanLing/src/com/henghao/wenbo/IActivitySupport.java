@@ -19,7 +19,7 @@ import android.widget.EditText;
  * @author qyl
  * @version HDMNV100R001, 2015-4-20
  * @see [相关类/方法]
- * @since [产品/模块版本]
+ * @since [产品/模块版本]22
  */
 public interface IActivitySupport {
 
